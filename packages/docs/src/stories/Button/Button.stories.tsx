@@ -3,6 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 // import React from 'react'
 
 const meta: Meta<typeof Button> = {
+  title: 'Forms/Button',
   component: Button,
   args: {
     children: 'Enviar',
