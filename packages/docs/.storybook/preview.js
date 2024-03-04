@@ -3,7 +3,7 @@ import { themes } from '@storybook/theming'
 const preview = {
   parameters: {
     backgrounds: {
-      default: themes.dark
+      default: 'dark',
     },
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
