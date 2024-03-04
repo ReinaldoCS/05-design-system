@@ -1,3 +1,5 @@
+import { ComponentProps, ElementType } from 'react'
+
 import { styled } from '../styles'
 
 export const Box = styled('div', {
@@ -6,3 +8,7 @@ export const Box = styled('div', {
   backgroundColor: '$gray800',
   border: '1px solid $gray600',
 })
+
+export interface TextProps extends ComponentProps<typeof Box> {
+  as?: ElementType
+}

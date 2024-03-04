@@ -1,4 +1,4 @@
-import { Box } from '@ignite-ui/react'
+import { Box, Text } from '@ignite-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 const meta: Meta<typeof Box> = {
@@ -7,7 +7,7 @@ const meta: Meta<typeof Box> = {
   args: {
     children: (
       <>
-        <span>Testando o elemento Box</span>
+        <Text>Testando o elemento Box</Text>
       </>
     ),
   },
