@@ -1,31 +1,91 @@
-import { ComponentProps } from 'react'
+import { ComponentProps, ElementType } from 'react'
 
 import { styled } from '../styles'
 
 export const Button = styled('button', {
+  all: 'unset',
+  borderRadius: '$sm',
+  fontSize: '$sm',
+  fontWeight: '$medium',
   fontFamily: '$default',
-  backgroundColor: '$ignite300',
-  borderRadius: '$md',
-  border: 0,
-  fontWeight: 'bold',
-  color: '$white',
+  textAlign: 'center',
+  minWidth: 120,
+  boxSizing: 'border-box',
+
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: '$2',
+  padding: '0 $4',
+
+  cursor: 'pointer',
+
+  '&:disabled': {
+    cursor: 'not-allowed',
+  },
+
+  svg: {
+    width: '$4',
+    height: '$4',
+  },
 
   variants: {
-    size: {
-      small: {
-        fontSize: 14,
-        padding: '$2 $4',
+    variant: {
+      primary: {
+        color: '$white',
+        backgroundColor: '$ignite500',
+
+        '&:not(:disabled):hover': {
+          backgroundColor: '$ignite300',
+        },
+
+        '&:disabled': {
+          backgroundColor: '$gray200',
+        },
       },
-      big: {
-        fontSize: 16,
-        padding: '$3 $6',
+      secondary: {
+        color: '$ignite300',
+        border: '2px solid $ignite500',
+
+        '&:not(:disabled):hover': {
+          color: '$white',
+          backgroundColor: '$ignite500',
+        },
+
+        '&:disabled': {
+          color: '$gray200',
+          borderColor: '$ignite200',
+        },
+      },
+      tertiary: {
+        color: '$gray100',
+
+        '&:not(:disabled):hover': {
+          color: '$white',
+        },
+
+        '&:disabled': {
+          color: '$gra6200',
+        },
+      },
+    },
+
+    size: {
+      sm: {
+        height: 38,
+      },
+      md: {
+        height: 46,
       },
     },
   },
 
   defaultVariants: {
-    size: 'small',
+    variant: 'primary',
+    size: 'md',
   },
 })
 
-export type ButtonProps = ComponentProps<typeof Button>
+export interface ButtonProps extends ComponentProps<typeof Button> {
+  as?: ElementType
+}
