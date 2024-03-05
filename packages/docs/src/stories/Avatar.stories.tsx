@@ -4,6 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 const meta: Meta<AvatarProps> = {
   title: 'Data display/Avatar',
   component: Avatar,
+  tags: ['autodocs'],
   args: {
     src: 'https://github.com/reinaldocs.png',
     alt: 'Reinaldo Correia',

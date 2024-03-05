@@ -5,6 +5,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 const meta: Meta<ButtonProps> = {
   title: 'Form/Button',
   component: Button,
+  tags: ['autodocs'],
   args: {
     children: 'Button',
   },
