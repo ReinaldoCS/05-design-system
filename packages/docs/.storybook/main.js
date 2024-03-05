@@ -26,8 +26,15 @@ const config = {
     options: {},
   },
   docs: {
-    autodocs: "tag",
-    // autodocs: true, // gera automaticamente a documentação
+    autodocs: true, // gera automaticamente a documentação
+    // autodocs: "tag",
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/05-design-system/'
+    }
+
+    return config
+  }
 };
 export default config;
