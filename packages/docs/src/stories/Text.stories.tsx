@@ -7,7 +7,30 @@ const meta: Meta<TextProps> = {
   tags: ['autodocs'],
   args: {
     children:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus libero, alias dignissimos, odio explicabo nam temporibus earum magnam enim, modi officia deserunt ut illo est totam ex aperiam perferendis cupiditate?',
+      'Lorem ipsum dozlor, sit amet consectetur adipisicing elit. Possimus libero, alias dignissimos, odio explicabo nam temporibus earum magnam enim, modi officia deserunt ut illo est totam ex aperiam perferendis cupiditate?',
+    size: 'md',
+  },
+  argTypes: {
+    size: {
+      options: [
+        'xxs',
+        'xs',
+        'sm',
+        'md',
+        'lg',
+        'xl',
+        '2xl',
+        '4xl',
+        '5xl',
+        '6xl',
+        '7xl',
+        '8xl',
+        '9xl',
+      ],
+      control: {
+        type: 'select',
+      },
+    },
   },
 }
 

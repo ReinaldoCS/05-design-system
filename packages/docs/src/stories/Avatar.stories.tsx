@@ -9,6 +9,13 @@ const meta: Meta<AvatarProps> = {
     src: 'https://github.com/reinaldocs.png',
     alt: 'Reinaldo Correia',
   },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 }
 
 export default meta
