@@ -6,6 +6,11 @@ const meta: Meta<CheckboxProps> = {
   component: Checkbox,
   tags: ['autodocs'],
   args: {},
+  argTypes: {
+    onClick: {
+      action: 'checked',
+    },
+  },
   decorators: [
     (Story) => (
       <Box
