@@ -27,6 +27,7 @@ const config = {
   },
   docs: {
     autodocs: "tag",
+    // autodocs: true, // gera automaticamente a documentação
   },
 };
 export default config;
