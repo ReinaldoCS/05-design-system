@@ -1,4 +1,4 @@
-import { Text, TextProps } from '@ignite-ui/react'
+import { Text, TextProps } from '@ignight-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 const meta: Meta<TextProps> = {

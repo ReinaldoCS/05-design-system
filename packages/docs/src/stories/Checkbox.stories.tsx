@@ -1,4 +1,4 @@
-import { Box, Checkbox, CheckboxProps, Text } from '@ignite-ui/react'
+import { Box, Checkbox, CheckboxProps, Text } from '@ignight-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 const meta: Meta<CheckboxProps> = {

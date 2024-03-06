@@ -1,4 +1,4 @@
-import { Avatar, AvatarProps } from '@ignite-ui/react'
+import { Avatar, AvatarProps } from '@ignight-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 const meta: Meta<AvatarProps> = {

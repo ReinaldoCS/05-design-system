@@ -1,4 +1,4 @@
-import { Box, Text } from '@ignite-ui/react'
+import { Box, Text } from '@ignight-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 const meta: Meta<typeof Box> = {
