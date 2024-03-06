@@ -1,5 +1,11 @@
 # @ignight-ui/react
 
+## 3.0.2
+
+### Patch Changes
+
+- fix: Ajusted export for TextInput component
+
 ## 3.0.1
 
 ### Patch Changes
