@@ -1,42 +1,49 @@
-import { Box, Text, TextInput, TextInputProps } from '@ignight-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
+import { Box, Text, TextInput, TextInputProps } from '@ignight-ui/react'
 
-const meta: Meta<TextInputProps> = {
+export default {
   title: 'Form/Text Input',
   component: TextInput,
-  tags: ['autodocs'],
   args: {},
+  argTypes: {
+    size: {
+      options: ['md','sm'],
+      control: {
+        type:'inline-radio',
+      },
+    }
+  },
+
   decorators: [
-    (Story) => (
-      <Box
-        as="label"
-        css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
-      >
-        <Text size="sm">Label example</Text>
-        <Story />
-      </Box>
-    ),
+    (Story) => {
+      return (
+        <Box
+          as="label"
+          css={{ display: 'flex', flexDirection: 'column', gap: '$2' }}
+        >
+          <Text size="sm">Email address</Text>
+          {Story()}
+        </Box>
+      )
+    },
   ],
-}
+} as Meta<TextInputProps>
 
-export default meta
-type Story = StoryObj<TextInputProps>
-
-export const Primary: Story = {
+export const Primary: StoryObj<TextInputProps> = {
   args: {
-    placeholder: 'Type something',
+    placeholder: 'Type your name',
   },
 }
 
-export const Disabled: Story = {
+export const Disabled: StoryObj<TextInputProps> = {
   args: {
     disabled: true,
   },
 }
 
-export const WithPrefix: Story = {
+export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
-    prefix: 'call.com/',
+    prefix: 'cal.com/',
     placeholder: 'your-username',
   },
 }

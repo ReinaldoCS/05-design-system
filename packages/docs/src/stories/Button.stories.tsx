@@ -16,7 +16,7 @@ const meta: Meta<ButtonProps> = {
     variant: {
       options: ['primary', 'secondary', 'tertiary'],
       control: {
-        type: 'inline-radio',
+        type: 'select',
       },
     },
     size: {

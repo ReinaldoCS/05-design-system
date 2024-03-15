@@ -1,5 +1,11 @@
 # @ignight-ui/react
 
+## 3.1.0
+
+### Minor Changes
+
+- Adding TextInput size and removing test color.
+
 ## 3.0.2
 
 ### Patch Changes
