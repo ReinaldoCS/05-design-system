@@ -4,7 +4,9 @@ import { Box, Text, TextInput, TextInputProps } from '@ignight-ui/react'
 export default {
   title: 'Form/Text Input',
   component: TextInput,
-  args: {},
+  args: {
+    size: 'md'
+  },
   argTypes: {
     size: {
       options: ['md','sm'],
