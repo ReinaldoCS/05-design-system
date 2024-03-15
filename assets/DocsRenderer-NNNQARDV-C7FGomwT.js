@@ -1,0 +1,7 @@
+function __vite__mapDeps(indexes) {
+  if (!__vite__mapDeps.viteFileDeps) {
+    __vite__mapDeps.viteFileDeps = ["assets/index-DI5IigMn.js","assets/index-CBqU2yxZ.js","assets/_commonjsHelpers-BosuxZz1.js"]
+  }
+  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
+}
+import{_ as a}from"./iframe-8dYTjZbG.js";import{R as e,r as c}from"./index-CBqU2yxZ.js";import{r as l,u}from"./react-18-D8cruF67.js";import{C as h,A as E,H as d,D as x}from"./index-BIAIzW8A.js";import"../sb-preview/runtime.js";import"./_commonjsHelpers-BosuxZz1.js";import"./index-BtM5VmRH.js";import"./chunk-EIRT5I3Z-CbnHSNsj.js";import"./index-Bw8VTzHM.js";import"./extends-CCbyfPlC.js";import"./index-Cmc67Rxs.js";import"./index-DrFu-skq.js";var _={code:h,a:E,...d},D=class extends c.Component{constructor(){super(...arguments),this.state={hasError:!1}}static getDerivedStateFromError(){return{hasError:!0}}componentDidCatch(t){let{showException:r}=this.props;r(t)}render(){let{hasError:t}=this.state,{children:r}=this.props;return t?null:e.createElement(e.Fragment,null,r)}},S=class{constructor(){this.render=async(t,r,o)=>{let n={..._,...r==null?void 0:r.components},s=x;return new Promise((m,i)=>{a(()=>import("./index-DI5IigMn.js"),__vite__mapDeps([0,1,2])).then(({MDXProvider:p})=>l(e.createElement(D,{showException:i,key:Math.random()},e.createElement(p,{components:n},e.createElement(s,{context:t,docsParameter:r}))),o)).then(()=>m())})},this.unmount=t=>{u(t)}}};export{S as DocsRenderer,_ as defaultComponents};
